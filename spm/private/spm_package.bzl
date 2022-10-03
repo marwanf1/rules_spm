@@ -465,6 +465,8 @@ def _spm_package_impl(ctx):
         target_desc = pds.get_target(pkg_desc, target_name)
         module_name = target_desc["name"]
 
+        print("zzzzzzzz "+ctx)
+
         clang_custom_info, target_copy_infos, target_build_inputs = _customize_clang_modulemap_and_hdrs(
             ctx,
             target_name,
